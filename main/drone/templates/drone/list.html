@@ -1,0 +1,73 @@
+<!-- ./employee/templates/employee/list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Registered Users List</title>
+{% endblock title %}
+
+{% block content %}
+    <table class="table table-striped">
+        <h2 style="text-align: center; padding-top: 1em; padding-bottom: 1em;">Registered Users</h2>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone No.</th>
+                <th scope="col">License Plate: </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usr in users %}
+                <tr>
+                    <th scope="row">{{ usr.name }}</th>
+                    <td>{{ usr.email }}</td>
+                    <td>{{ usr.phone }}</td>
+                    <td>{{ usr.license }}</td>
+                    <td>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+
+    <table class="table table-striped">
+        <h2 style="text-align: center; padding-top: 1em; padding-bottom: 1em;">Unrgistered Users</h2>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone No.</th>
+                <th scope="col">License Plate: </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usr in unreg %}
+                <tr>
+                    <th scope="row">{{ usr.name }}</th>
+                    <td>{{ usr.email }}</td>
+                    <td>{{ usr.phone }}</td>
+                    <td>{{ usr.license }}</td>
+                    <td>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="license">
+        <button type = "submit">Check</button>
+        {{message}}
+    </form>
+        <br>
+    <form action="/issueTicket" method="post">
+        {% csrf_token %}
+        <input type="text" name="license">
+        <button type = "submit">Issue Ticket</button>
+        {{message}}
+    </form>
+    <div class="text-center">
+        <a href="{% url 'Create_User' %}"><button type="button" class="btn btn-primary">Add New User</button></a>
+    </div>
+{% endblock content %}
