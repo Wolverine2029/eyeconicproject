@@ -1,0 +1,258 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 12, in Users_List
+    logger.info('Requested users list ' + str(datetime.datetime.now()) + ' hours!')
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Issuing Ticket to : KEV12
+Not Found: /check/XYZ123
+Not Found: /
+Not Found: /check
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 26, in Users_List
+    firebase = firebase.FirebaseApplication("https://eyeconic-c6280-default-rtdb.firebaseio.com/", None)
+UnboundLocalError: local variable 'firebase' referenced before assignment
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 29, in Users_List
+    ru = reg.child("RegisteredUsers").get()
+AttributeError: 'dict' object has no attribute 'child'
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 30, in Users_List
+    ru = db.child("RegisteredUsers").get()
+AttributeError: module 'firebase_admin.db' has no attribute 'child'
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 30, in Users_List
+    ru = db.reference("/eyeconic-c6280-default-rtdb/RegisteredUsers").get()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/db.py", line 68, in reference
+    service = _utils.get_app_service(app, _DB_ATTRIBUTE, _DatabaseService)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/_utils.py", line 97, in get_app_service
+    app = _get_initialized_app(app)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/_utils.py", line 82, in _get_initialized_app
+    return firebase_admin.get_app()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/__init__.py", line 135, in get_app
+    raise ValueError(
+ValueError: The default Firebase app does not exist. Make sure to initialize the SDK by calling initialize_app().
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 29, in Users_List
+    ru = reg.child("RegisteredUsers").get()
+AttributeError: 'dict' object has no attribute 'child'
+Internal Server Error: /check/abc/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 30, in Users_List
+    ru = db.reference("RegisteredUsers").get()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/db.py", line 68, in reference
+    service = _utils.get_app_service(app, _DB_ATTRIBUTE, _DatabaseService)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/_utils.py", line 97, in get_app_service
+    app = _get_initialized_app(app)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/_utils.py", line 82, in _get_initialized_app
+    return firebase_admin.get_app()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/__init__.py", line 135, in get_app
+    raise ValueError(
+ValueError: The default Firebase app does not exist. Make sure to initialize the SDK by calling initialize_app().
+Internal Server Error: /check/SUN123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 947, in _enum_from_op_string
+    return _COMPARISON_OPERATORS[op_string]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 36, in Users_List
+    docs = db.collection('RegUsers').where("license", "=", license).get()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_collection.py", line 263, in where
+    return query.where(field_path, op_string, value)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 340, in where
+    op=_enum_from_op_string(op_string),
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 951, in _enum_from_op_string
+    raise ValueError(msg)
+ValueError: Operator string '=' is invalid. Valid choices are: !=, <, <=, ==, >, >=, array_contains, array_contains_any, in, not-in.
+Internal Server Error: /check/SUN123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 947, in _enum_from_op_string
+    return _COMPARISON_OPERATORS[op_string]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 40, in Users_List
+    docs1 = db.collection('UnregUsers').where("license", "=", license).get()
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_collection.py", line 263, in where
+    return query.where(field_path, op_string, value)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 340, in where
+    op=_enum_from_op_string(op_string),
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/google/cloud/firestore_v1/base_query.py", line 951, in _enum_from_op_string
+    raise ValueError(msg)
+ValueError: Operator string '=' is invalid. Valid choices are: !=, <, <=, ==, >, >=, array_contains, array_contains_any, in, not-in.
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 33, in Users_List
+    fa.initialize_app(cred)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/__init__.py", line 71, in initialize_app
+    raise ValueError((
+ValueError: The default Firebase app already exists. This means you called initialize_app() more than once without providing an app name as the second argument. In most cases you only need to call initialize_app() once. But if you do want to initialize multiple apps, pass a second argument to initialize_app() to give each app a unique name.
+Internal Server Error: /check/SUN123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 33, in Users_List
+    fa.initialize_app(cred)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/__init__.py", line 71, in initialize_app
+    raise ValueError((
+ValueError: The default Firebase app already exists. This means you called initialize_app() more than once without providing an app name as the second argument. In most cases you only need to call initialize_app() once. But if you do want to initialize multiple apps, pass a second argument to initialize_app() to give each app a unique name.
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 33, in Users_List
+    fa.initialize_app(cred)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/firebase_admin/__init__.py", line 71, in initialize_app
+    raise ValueError((
+ValueError: The default Firebase app already exists. This means you called initialize_app() more than once without providing an app name as the second argument. In most cases you only need to call initialize_app() once. But if you do want to initialize multiple apps, pass a second argument to initialize_app() to give each app a unique name.
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 88, in Users_List
+    images = checkImage(img)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 111, in checkImage
+    cv2.imshow(image)
+cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imshow'
+> Overload resolution failed:
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 55, in Users_List
+    checkImage()
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 114, in checkImage
+    with open('output.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'output.txt'
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 88, in Users_List
+    images = checkImage(img)
+TypeError: checkImage() takes 0 positional arguments but 1 was given
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 55, in Users_List
+    checkImage()
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 120, in checkImage
+    output
+NameError: name 'output' is not defined
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 55, in Users_List
+    checkImage()
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 146, in checkImage
+    cv2.imshow(image)
+cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imshow'
+> Overload resolution failed:
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 55, in Users_List
+    checkImage()
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 146, in checkImage
+    cv2.imshow(image)
+cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imshow'
+> Overload resolution failed:
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+
+Internal Server Error: /check/ANL123/
+Traceback (most recent call last):
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/anilkumar/Downloads/eyeconic/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 55, in Users_List
+    checkImage()
+  File "/Users/anilkumar/Downloads/eyeconic/main/drone/views.py", line 148, in checkImage
+    cv2.imshow(image)
+cv2.error: OpenCV(4.5.5) :-1: error: (-5:Bad argument) in function 'imshow'
+> Overload resolution failed:
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+>  - imshow() missing required argument 'mat' (pos 2)
+
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
